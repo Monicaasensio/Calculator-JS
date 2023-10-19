@@ -1,0 +1,117 @@
+.body{
+    background-color: cornsilk;
+}
+
+.main {
+    background-color: cornsilk;
+}
+
+.calcbox {
+    width: 15rem;
+    height: 20rem;
+    background-color: cornflowerblue;
+    border: 1px solid black;
+    border-radius: 2%;
+    /* box-shadow: ; */
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.calcscreen {
+    width: 12rem;
+    height: 2.5rem;
+    margin: 1rem ;
+    background-color: cornsilk;
+    text-align: end;
+    font-size: 2rem;
+}
+
+.buttons {
+    width: 12rem;
+    height: 14rem;
+    margin: 0 1rem;
+    padding: 4px;
+    display: grid;
+/* box-shadow: 20%; */
+    background-color: lightseagreen;
+}
+
+.row1, .row2, .row3, .row4 {
+    /* display: block;    */
+    height: 3.6rem;
+    text-align: center;
+}
+
+.row1 button {
+    width: 18%;
+    height: 90%;
+    margin-top: 10px;
+    border-radius: 10%;
+}
+
+.row2 button {
+    width: 18%;
+    height: 90%;
+    margin-top: 10px;
+    border-radius: 10%;
+}
+
+.row3 button {
+    width: 18%;
+    height: 90%;
+    margin-top: 10px;
+    border-radius: 10%;
+}
+
+.row4 button{
+    width: 31%;
+    height: 70%;
+    border-radius: 10%;
+    margin-top: 10px;
+}
+
+.sign {
+    background-color: lightgoldenrodyellow;
+    width: 1.5rem;
+    height: 1.5rem;
+
+}
+
+.sign:hover {
+    background-color: lightpink;
+}
+
+.number {
+    background-color: lightblue;
+
+}
+
+.number:hover {
+    background-color: lightpink;
+}
+
+.decimal {
+    background-color: cornsilk;
+
+}
+
+.decimal:hover {
+    background-color: lightpink;
+}
+
+.clear {
+    background-color: orange;
+}
+
+.clear:hover {
+    background-color: lightpink;
+}
+
+.enter {
+    background-color: yellow;
+}
+
+.enter:hover {
+    background-color: lightpink;
+}
