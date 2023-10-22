@@ -7,20 +7,24 @@
 }
 
 .calcbox {
-    width: 15rem;
-    height: 20rem;
+    width:20rem;
+    height: 25rem;
     background-color: cornflowerblue;
     border: 1px solid black;
     border-radius: 2%;
-    /* box-shadow: ; */
+    box-shadow: 10px 5px 5px rgb(48, 57, 57);
     position: absolute;
-    top: 20%;
-    left: 20%;
+    top: 10%;
+    left: 15%;
+}
+
+.calcbox button {
+    font-size: 1.8rem;
 }
 
 .calcscreen {
-    width: 12rem;
-    height: 2.5rem;
+    width: 18rem;
+    height: 3rem;
     margin: 1rem ;
     background-color: cornsilk;
     text-align: end;
@@ -28,90 +32,201 @@
 }
 
 .buttons {
-    width: 12rem;
-    height: 14rem;
-    margin: 0 1rem;
-    padding: 4px;
+    width: 17rem;
+    height: 15rem;
+    margin: 0 1rem; 
+    padding: 7px 7px;
     display: grid;
-/* box-shadow: 20%; */
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(1, 25%);
     background-color: lightseagreen;
 }
 
-.row1, .row2, .row3, .row4 {
-    /* display: block;    */
-    height: 3.6rem;
-    text-align: center;
+.operators {
+    display: flex;
+    justify-content: center;
 }
 
-.row1 button {
-    width: 18%;
-    height: 90%;
-    margin-top: 10px;
-    border-radius: 10%;
-}
-
-.row2 button {
-    width: 18%;
-    height: 90%;
-    margin-top: 10px;
-    border-radius: 10%;
-}
-
-.row3 button {
-    width: 18%;
-    height: 90%;
-    margin-top: 10px;
-    border-radius: 10%;
-}
-
-.row4 button{
-    width: 31%;
-    height: 70%;
-    border-radius: 10%;
-    margin-top: 10px;
+.operators button{
+    width: 4.25rem;
+    height: 3rem;
 }
 
 .sign {
     background-color: lightgoldenrodyellow;
-    width: 1.5rem;
-    height: 1.5rem;
-
-}
-
-.sign:hover {
-    background-color: lightpink;
 }
 
 .number {
     background-color: lightblue;
-
-}
-
-.number:hover {
-    background-color: lightpink;
 }
 
 .decimal {
     background-color: cornsilk;
-
-}
-
-.decimal:hover {
-    background-color: lightpink;
 }
 
 .clear {
     background-color: orange;
 }
 
-.clear:hover {
-    background-color: lightpink;
-}
-
 .enter {
     background-color: yellow;
+    width: 17rem;
 }
 
-.enter:hover {
+.sign:hover, .number:hover, .decimal:hover, .clear:hover, .enter:hover {
     background-color: lightpink;
+}
+
+/* designed for mobile */
+
+/* ipads & tablets */
+@media screen and (min-width: 481px) and (max-width: 786px) {
+    .calcbox {
+        width: 25rem;
+        height: 30rem;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+    }
+
+    .calcbox button {
+        font-size: 2.5rem;
+    }
+
+    .calcscreen {
+        width: 22rem;
+        height: 4rem;
+        margin: 1.2rem;
+        font-size: 3rem;
+    }
+
+    .buttons {
+        width: 22rem;
+        height: 19rem;
+        margin: 0 1rem; 
+        padding: 7px 7px;
+    }
+
+    .operators button {
+        width: 5.5rem;
+        height: 3rem;
+    }
+
+    .enter {
+        width: 22rem;
+    }
+}
+
+/* small screens & laptops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .calcbox {
+        width: 30rem;
+        height: 35rem;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+    }
+
+    .calcbox button {
+        font-size: 3rem;
+    }
+
+    .calcscreen {
+        width: 27rem;
+        height: 4rem;
+        margin: 1.4rem;
+        font-size: 3.5rem;
+    }
+
+    .buttons {
+        width: 26rem;
+        height: 22rem;
+        margin: 0 1.5rem; 
+        padding: 7px 7px;
+    }
+
+    .operators button {
+        width: 6.6rem;
+        height: 3.4rem;
+    }
+
+    .enter {
+        width: 26rem;
+    }
+}
+
+/* desktops & large screens */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .calcbox {
+        width: 35rem;
+        height:40rem;
+        position: absolute;
+        top: 20%;
+        left: 25%;
+    }
+
+    .calcbox button {
+        font-size: 3.5rem;
+    }
+
+    .calcscreen {
+        width: 32rem;
+        height: 5rem;
+        margin: 1.4rem;
+        font-size: 3.8rem;
+    }
+
+    .buttons {
+        width: 30rem;
+        height: 25rem;
+        margin: 0 2rem; 
+        padding: 7px 7px;
+    }
+
+    .operators button {
+        width: 7.5rem;
+        height: 5rem;
+    }
+
+    .enter {
+        width: 30rem;
+    }
+}
+
+/* extra large screens & tvs */
+@media screen and (min-width: 1201px) {
+    .calcbox {
+        width: 40rem;
+        height: 45rem;
+        position: absolute;
+        top: 20%;
+        left: 35%;
+    }
+
+    .calcbox button {
+        font-size: 3.5rem;
+    }
+
+    .calcscreen {
+        width: 36rem;
+        height: 6rem;
+        margin: 1.8rem;
+        font-size: 4.2rem;
+    }
+
+    .buttons {
+        width: 35rem;
+        height: 27rem;
+        margin: 0 2rem; 
+        padding: 7px 7px;
+    }
+
+    .operators button {
+        width: 8.75rem;
+        height: 6rem;
+    }
+
+    .enter {
+        width: 35rem;
+    }
 }
